@@ -1,0 +1,46 @@
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Similar Styles  */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #F3F1FF;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  background-color: #fff;
+  width: 870px;
+  padding: 33px 42px 30px;
+}
+/* Top Players Style  */
+.section-title{
+  font-size: 24px;
+  color: #562EFF;
+  margin-top: 0;
+}
+.players{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.player{
+  display: flex;
+  align-items: center;
+}
+.player img{
+  width: 56px;
+  height: 56px;
+}
+.player-name, .blog-info{
+  margin-left: 16px;
+  font-size: 18px;
+}
+hr{
+  border: 1px solid #D1D1D1;
+  margin-top: 22px;
+}
