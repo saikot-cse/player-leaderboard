@@ -8,6 +8,43 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
+/* Navbar styles  */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #562EFF;
+}
+nav .logo img {
+  width: 41px;
+  height: 51px;
+}
+#toggle{
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 560px;
+}
+.logo h1{
+  color: #fff;
+  margin-left: 16px;
+  font-size: 24px;
+}
+.fa-bars{
+  display: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.menu a{
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
 main {
   display: flex;
   justify-content: center;
@@ -81,7 +118,6 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 25px;
-  
 }
 .course {
   width: 252.42px;
@@ -134,16 +170,19 @@ hr {
 /* for small devices  */
 
 @media only screen and (max-width: 688px) {
-  .container{
+  .container {
     width: 100%;
   }
-  .players, .blogs, .courses{
+  .players,
+  .blogs,
+  .courses {
     grid-template-columns: repeat(1, 1fr);
   }
-  .player, .blog{
+  .player,
+  .blog {
     flex-direction: column;
   }
-  .courses{
+  .courses {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,17 +192,21 @@ hr {
 
 /* for midimu devices  */
 
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-  .container{
+@media only screen and (min-width: 688px) and (max-width: 992px) {  
+
+  .container {
     width: 100%;
   }
-  .players, .blogs, .courses{
+  .players,
+  .blogs,
+  .courses {
     grid-template-columns: repeat(2, 1fr);
   }
-  .player, .blog{
+  .player,
+  .blog {
     flex-direction: column;
   }
-  .courses{
+  .courses {
     margin-left: 70px;
   }
 }
