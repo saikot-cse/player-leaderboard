@@ -128,3 +128,42 @@ hr {
 .fa-star.empty {
   color: #aeaeae;
 }
+
+/* Media Queries */
+
+/* for small devices  */
+
+@media only screen and (max-width: 688px) {
+  .container{
+    width: 100%;
+  }
+  .players, .blogs, .courses{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player, .blog{
+    flex-direction: column;
+  }
+  .courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
+}
+
+/* for midimu devices  */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container{
+    width: 100%;
+  }
+  .players, .blogs, .courses{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player, .blog{
+    flex-direction: column;
+  }
+  .courses{
+    margin-left: 70px;
+  }
+}
